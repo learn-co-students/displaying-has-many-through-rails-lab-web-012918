@@ -1,0 +1,18 @@
+rails g model for doctor, patient and appointment
+
+doctor name, deparment
+patient name, age
+appointment appointment_datetime:DateTime, t.belongs_to doctor, t.belongs_to patient
+
+doctor has many appointments, patients through appts
+patient has many appointments, doctors through appts
+appt belongs to doctor and patient
+
+doctor index links to each doctor and shows patient count
+doctor show name, department, appoints.each do appt.date, appt.time, patient
+
+patient index links to patient and shows appt count for each
+patient show lists all appts with date, time and link_to doctor
+
+appt show date, time, patient and doctor.
+NO appt index
